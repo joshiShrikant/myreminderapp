@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/reminders")
+@RequestMapping("/api/v1/reminder")
 @CrossOrigin(origins = "http://localhost:4200") // for Angular
 public class ReminderController {
 

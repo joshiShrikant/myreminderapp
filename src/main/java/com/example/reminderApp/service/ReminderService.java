@@ -1,6 +1,6 @@
 package com.example.reminderApp.service;
 
-import com.example.reminderApp.Repository.ReminderRepository;
+import com.example.reminderApp.repository.ReminderRepository;
 import com.example.reminderApp.entity.Reminder;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

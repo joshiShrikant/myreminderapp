@@ -1,5 +1,6 @@
 package com.example.reminderApp.entity;
 
+import com.example.reminderApp.enums.ReminderStatus;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
@@ -24,4 +25,7 @@ public class Reminder {
     @Column(name = "`repeat`")
     private String repeat;
     // e.g., once, daily
+
+    @Enumerated(EnumType.STRING)
+    private ReminderStatus status = ReminderStatus.ACTIVE; // default ACTIVE
 }
